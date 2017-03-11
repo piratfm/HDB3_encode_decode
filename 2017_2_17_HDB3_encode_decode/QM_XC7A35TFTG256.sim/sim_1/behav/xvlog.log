@@ -1,0 +1,20 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/project/vivadoProject/2017_2_17_HDB3_encode/2017_2_17_HDB3_encode1/Code/source.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module source
+WARNING: [VRFC 10-986] literal value truncated to fit in 5 bits [C:/project/vivadoProject/2017_2_17_HDB3_encode/2017_2_17_HDB3_encode1/Code/source.v:48]
+WARNING: [VRFC 10-986] literal value truncated to fit in 5 bits [C:/project/vivadoProject/2017_2_17_HDB3_encode/2017_2_17_HDB3_encode1/Code/source.v:49]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/project/vivadoProject/2017_2_17_HDB3_encode/2017_2_17_HDB3_encode1/Code/add_v.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add_v
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/project/vivadoProject/2017_2_17_HDB3_encode/2017_2_17_HDB3_encode1/Code/add_b.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add_b
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/project/vivadoProject/2017_2_17_HDB3_encode/2017_2_17_HDB3_encode1/Code/polar.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module polar
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/project/vivadoProject/2017_2_17_HDB3_encode/2017_2_17_HDB3_encode1/Code/remove_bv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module remove_bv
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/project/vivadoProject/2017_2_17_HDB3_encode/2017_2_17_HDB3_encode1/Code/remove_polar.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module remove_polar
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/project/vivadoProject/2017_2_17_HDB3_encode/2017_2_17_HDB3_encode1/Code/TOP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TOP
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/project/vivadoProject/2017_2_17_HDB3_encode/2017_2_17_HDB3_encode1/Testbench/TOP_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TOP_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/project/vivadoProject/2017_2_17_HDB3_encode/2017_2_17_HDB3_encode1/QM_XC7A35TFTG256.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

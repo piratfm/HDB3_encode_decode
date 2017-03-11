@@ -1,0 +1,55 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Thu Feb 16 13:20:51 2017
+# Process ID: 2588
+# Current directory: C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13160 C:\project\vivadoProject\EX_Prj\QM_XC7A35TFTG256\QM_XC7A35TFTG256.xpr
+# Log file: C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256/vivado.log
+# Journal file: C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256/QM_XC7A35TFTG256.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'clk_wiz_0' is locked:
+* IP definition 'Clocking Wizard (5.3)' for IP 'clk_wiz_0' (customized with software release 2016.3) has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 791.430 ; gain = 130.910
+upgrade_ip -srcset clk_wiz_0 -vlnv xilinx.com:ip:clk_wiz:5.3 [get_ips  clk_wiz_0] -log ip_upgrade.log
+Upgrading 'clk_wiz_0'
+INFO: [Project 1-386] Moving file 'C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256/IP/clk_wiz_0/clk_wiz_0.xci' from fileset 'clk_wiz_0' to fileset 'sources_1'.
+INFO: [IP_Flow 19-3422] Upgraded clk_wiz_0 (Clocking Wizard 5.3) from revision 2 to revision 3
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_wiz_0'...
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256/ip_upgrade.log'.
+upgrade_ip: Time (s): cpu = 00:00:14 ; elapsed = 00:00:10 . Memory (MB): peak = 879.918 ; gain = 52.441
+export_ip_user_files -of_objects [get_ips clk_wiz_0] -no_script -sync -force -quiet
+generate_target all [get_files  C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256/IP/clk_wiz_0/clk_wiz_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_wiz_0'...
+catch { config_ip_cache -export [get_ips -all clk_wiz_0] }
+export_ip_user_files -of_objects [get_files C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256/IP/clk_wiz_0/clk_wiz_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256/IP/clk_wiz_0/clk_wiz_0.xci]
+launch_runs -jobs 2 clk_wiz_0_synth_1
+[Thu Feb 16 13:22:43 2017] Launched clk_wiz_0_synth_1...
+Run output will be captured here: C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256/QM_XC7A35TFTG256.runs/clk_wiz_0_synth_1/runme.log
+export_simulation -of_objects [get_files C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256/IP/clk_wiz_0/clk_wiz_0.xci] -directory C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256/QM_XC7A35TFTG256.ip_user_files/sim_scripts -ip_user_files_dir C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256/QM_XC7A35TFTG256.ip_user_files -ipstatic_source_dir C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256/QM_XC7A35TFTG256.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256/QM_XC7A35TFTG256.cache/compile_simlib/modelsim} {questa=C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256/QM_XC7A35TFTG256.cache/compile_simlib/questa} {riviera=C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256/QM_XC7A35TFTG256.cache/compile_simlib/riviera} {activehdl=C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256/QM_XC7A35TFTG256.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256/QM_XC7A35TFTG256.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Feb 16 13:23:02 2017] Launched clk_wiz_0_synth_1, synth_1...
+Run output will be captured here:
+clk_wiz_0_synth_1: C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256/QM_XC7A35TFTG256.runs/clk_wiz_0_synth_1/runme.log
+synth_1: C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256/QM_XC7A35TFTG256.runs/synth_1/runme.log
+[Thu Feb 16 13:23:02 2017] Launched impl_1...
+Run output will be captured here: C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256/QM_XC7A35TFTG256.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Feb 16 13:28:29 2017...

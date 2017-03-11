@@ -1,0 +1,16 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (win64) Build 1733598 Wed Dec 14 22:35:39 MST 2016
+| Date         : Thu Feb 16 13:22:34 2017
+| Host         : beibei running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tftg256-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'clk_wiz_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of clk_wiz_0 (xilinx.com:ip:clk_wiz:5.3) from (Rev. 2) to (Rev. 3)
+

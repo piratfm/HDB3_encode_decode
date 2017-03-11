@@ -1,0 +1,337 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Mon Jan 16 22:22:11 2017
+# Process ID: 9928
+# Current directory: C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2760 C:\project\vivadoProject\EX_Prj\QM_XC7A35TFTG256\QM_XC7A35TFTG256.xpr
+# Log file: C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256/vivado.log
+# Journal file: C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256/QM_XC7A35TFTG256.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/2016_3/Vivado/2016.3/data/ip'.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:07 . Memory (MB): peak = 786.535 ; gain = 133.871
+can't read "mmcm_bufgcediv2": no such variable
+can't read "mmcm_bufgcediv2": no such variable
+set_property -dict [list CONFIG.CLK_OUT2_PORT {clk_150m}] [get_ips clk_wiz_0]
+generate_target all [get_files  C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256/IP/clk_wiz_0/clk_wiz_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_wiz_0'...
+catch { config_ip_cache -export [get_ips -all clk_wiz_0] }
+export_ip_user_files -of_objects [get_files C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256/IP/clk_wiz_0/clk_wiz_0.xci] -no_script -sync -force -quiet
+reset_run clk_wiz_0_synth_1
+launch_runs -jobs 2 clk_wiz_0_synth_1
+[Mon Jan 16 22:23:32 2017] Launched clk_wiz_0_synth_1...
+Run output will be captured here: C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256/QM_XC7A35TFTG256.runs/clk_wiz_0_synth_1/runme.log
+export_simulation -of_objects [get_files C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256/IP/clk_wiz_0/clk_wiz_0.xci] -directory C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256/QM_XC7A35TFTG256.ip_user_files/sim_scripts -ip_user_files_dir C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256/QM_XC7A35TFTG256.ip_user_files -ipstatic_source_dir C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256/QM_XC7A35TFTG256.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256/QM_XC7A35TFTG256.cache/compile_simlib/modelsim} {questa=C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256/QM_XC7A35TFTG256.cache/compile_simlib/questa} {riviera=C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256/QM_XC7A35TFTG256.cache/compile_simlib/riviera} {activehdl=C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256/QM_XC7A35TFTG256.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Mon Jan 16 22:26:06 2017] Launched synth_1...
+Run output will be captured here: C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256/QM_XC7A35TFTG256.runs/synth_1/runme.log
+[Mon Jan 16 22:26:06 2017] Launched impl_1...
+Run output will be captured here: C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256/QM_XC7A35TFTG256.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Mon Jan 16 22:26:47 2017] Launched synth_1...
+Run output will be captured here: C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256/QM_XC7A35TFTG256.runs/synth_1/runme.log
+[Mon Jan 16 22:26:47 2017] Launched impl_1...
+Run output will be captured here: C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256/QM_XC7A35TFTG256.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2016.3
+  **** Build date : Oct 10 2016-19:47:06
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/00000000000000
+set_property PROGRAM.FILE {C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256/QM_XC7A35TFTG256.runs/impl_1/TOP.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256/QM_XC7A35TFTG256.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7a35t_0] 0]
+current_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+create_hw_cfgmem -hw_device [lindex [get_hw_devices] 0] -mem_dev [lindex [get_cfgmem_parts {n25q64-3.3v-spi-x1_x2_x4}] 0]
+delete_hw_cfgmem [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+create_hw_cfgmem -hw_device [lindex [get_hw_devices] 0] -mem_dev  [lindex [get_cfgmem_parts {n25q64-3.3v-spi-x1_x2_x4}] 0]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+WARNING: [Labtools 27-1347] Unable to find Debug Probes file [C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256/QM_XC7A35TFTG256.runs/impl_1/debug_nets.ltx]. Please update hw_device property [PROBES.FILE]
+ Update of hw_probe objects, will be skipped.
+ERROR: [Common 17-48] File not found: C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256/QM_XC7A35TFTG256.runs/impl_1/debug_nets.ltx
+set_property PROGRAM.ADDRESS_RANGE  {use_file} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.FILES [list "C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256/QM_XC7A35TFTG256.runs/impl_1/TOP.bin" ] [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0]]
+set_property PROGRAM.UNUSED_PIN_TERMINATION {pull-none} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+startgroup 
+if {![string equal [get_property PROGRAM.HW_CFGMEM_TYPE  [lindex [get_hw_devices] 0]] [get_property MEM_TYPE [get_property CFGMEM_PART [get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]]]] }  { create_hw_bitstream -hw_device [lindex [get_hw_devices] 0] [get_property PROGRAM.HW_CFGMEM_BITFILE [ lindex [get_hw_devices] 0]]; program_hw_devices [lindex [get_hw_devices] 0]; }; 
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_cfgmem -hw_cfgmem [get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+Mfg ID : 20   Memory Type : ba   Memory Capacity : 17   Device ID 1 : 0   Device ID 2 : 0
+Performing Erase Operation...
+Erase Operation successful.
+Performing Program and Verify Operations...
+Program/Verify Operation successful.
+INFO: [Labtoolstcl 44-377] Flash programming completed successfully
+program_hw_cfgmem: Time (s): cpu = 00:00:02 ; elapsed = 00:01:55 . Memory (MB): peak = 1068.941 ; gain = 0.000
+endgroup
+close_hw
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2016.3
+  **** Build date : Oct 10 2016-19:47:06
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+ERROR: [Labtoolstcl 44-469] There is no current hw_target.
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/Port_#0002.Hub_#0004
+ERROR: [Labtools 27-2270] Target localhost:3121/xilinx_tcf/Xilinx/Port_#0002.Hub_#0004 is no longer available.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/Port_#0002.Hub_#0004
+ERROR: [Labtools 27-2270] Target localhost:3121/xilinx_tcf/Xilinx/Port_#0002.Hub_#0004 is no longer available.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/Port_#0002.Hub_#0004
+ERROR: [Labtools 27-2270] Target localhost:3121/xilinx_tcf/Xilinx/Port_#0002.Hub_#0004 is no longer available.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/Port_#0002.Hub_#0004
+ERROR: [Labtools 27-2270] Target localhost:3121/xilinx_tcf/Xilinx/Port_#0002.Hub_#0004 is no longer available.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/Port_#0002.Hub_#0004
+ERROR: [Labtools 27-2270] Target localhost:3121/xilinx_tcf/Xilinx/Port_#0002.Hub_#0004 is no longer available.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/00000000000000
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Common 17-48] File not found: C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256/QM_XC7A35TFTG256.runs/impl_1/debug_nets.ltx
+close_hw
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/00000000000000
+set_property PROGRAM.FILE {C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256/QM_XC7A35TFTG256.runs/impl_1/TOP.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256/QM_XC7A35TFTG256.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7a35t_0] 0]
+current_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+create_hw_cfgmem -hw_device [lindex [get_hw_devices] 0] -mem_dev [lindex [get_cfgmem_parts {n25q64-3.3v-spi-x1_x2_x4}] 0]
+set_property PROBES.FILE {C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256/QM_XC7A35TFTG256.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROGRAM.FILE {C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256/QM_XC7A35TFTG256.runs/impl_1/TOP.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Common 17-48] File not found: C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256/QM_XC7A35TFTG256.runs/impl_1/debug_nets.ltx
+launch_simulation
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/2016_3/Vivado/2016.3/data/xsim/ip/xsim_ip.ini' copied to run dir:'C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256/QM_XC7A35TFTG256.sim/sim_1/behav'
+INFO: [USF-XSim-37] Inspecting design source files for 'TOP_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256/QM_XC7A35TFTG256.sim/sim_1/behav/sig_rom1.mif'
+INFO: [SIM-utils-43] Exported 'C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256/QM_XC7A35TFTG256.sim/sim_1/behav/sin_1024_14_unsigned.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256/QM_XC7A35TFTG256.sim/sim_1/behav'
+"xvlog -m64 --relax -prj TOP_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256/IP/sig_rom1/sim/sig_rom1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sig_rom1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256/IP/clk_wiz_0/clk_wiz_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256/IP/clk_wiz_0/clk_wiz_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256/Code/IQsin.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IQsin
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256/Code/TOP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TOP
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256/Testbench/TOP_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TOP_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256/QM_XC7A35TFTG256.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256/QM_XC7A35TFTG256.sim/sim_1/behav'
+Vivado Simulator 2016.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/2016_3/Vivado/2016.3/bin/unwrapped/win64.o/xelab.exe -wto 85023478c8774591a5e1aabf500d4908 --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_11 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot TOP_tb_behav xil_defaultlib.TOP_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256/IP/clk_wiz_0/clk_wiz_0.v" Line 71. Module clk_wiz_0 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256/IP/clk_wiz_0/clk_wiz_0_clk_wiz.v" Line 69. Module clk_wiz_0_clk_wiz has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2016.3/continuous/2016_10_10_1682563/data/verilog/src/unisims/IBUF.v" Line 30. Module IBUF has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2016.3/continuous/2016_10_10_1682563/data/verilog/src/unisims/MMCME2_ADV.v" Line 123. Module MMCME2_ADV(CLKFBOUT_MULT_F=21.0,CLKIN1_PERIOD=20.0,CLKOUT0_DIVIDE_F=10.5,CLKOUT1_DIVIDE=7) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2016.3/continuous/2016_10_10_1682563/data/verilog/src/unisims/BUFG.v" Line 26. Module BUFG has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2016.3/continuous/2016_10_10_1682563/data/verilog/src/unisims/BUFG.v" Line 26. Module BUFG has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2016.3/continuous/2016_10_10_1682563/data/verilog/src/unisims/BUFG.v" Line 26. Module BUFG has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256/Code/IQsin.v" Line 24. Module IQsin has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256/IP/sig_rom1/sim/sig_rom1.v" Line 56. Module sig_rom1 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2016.3/nightly/2016_10_10_1682563/packages/customer/vivado/data/ip/xilinx/dist_mem_gen_v8_0/simulation/dist_mem_gen_v8_0.v" Line 78. Module dist_mem_gen_v8_0_11(C_FAMILY="artix7",C_ADDR_WIDTH=10,C_DEPTH=1024,C_HAS_CLK=0,C_HAS_D=0,C_HAS_WE=0,C_MEM_INIT_FILE="sig_rom1.mif",C_MEM_TYPE=0,C_READ_MIF=1,C_SYNC_ENABLE=1,C_WIDTH=14) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256/QM_XC7A35TFTG256.sim/sim_1/behav/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256/IP/clk_wiz_0/clk_wiz_0.v" Line 71. Module clk_wiz_0 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256/IP/clk_wiz_0/clk_wiz_0_clk_wiz.v" Line 69. Module clk_wiz_0_clk_wiz has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2016.3/continuous/2016_10_10_1682563/data/verilog/src/unisims/IBUF.v" Line 30. Module IBUF has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2016.3/continuous/2016_10_10_1682563/data/verilog/src/unisims/MMCME2_ADV.v" Line 123. Module MMCME2_ADV(CLKFBOUT_MULT_F=21.0,CLKIN1_PERIOD=20.0,CLKOUT0_DIVIDE_F=10.5,CLKOUT1_DIVIDE=7) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2016.3/continuous/2016_10_10_1682563/data/verilog/src/unisims/BUFG.v" Line 26. Module BUFG has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2016.3/continuous/2016_10_10_1682563/data/verilog/src/unisims/BUFG.v" Line 26. Module BUFG has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2016.3/continuous/2016_10_10_1682563/data/verilog/src/unisims/BUFG.v" Line 26. Module BUFG has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256/Code/IQsin.v" Line 24. Module IQsin has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256/IP/sig_rom1/sim/sig_rom1.v" Line 56. Module sig_rom1 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2016.3/nightly/2016_10_10_1682563/packages/customer/vivado/data/ip/xilinx/dist_mem_gen_v8_0/simulation/dist_mem_gen_v8_0.v" Line 78. Module dist_mem_gen_v8_0_11(C_FAMILY="artix7",C_ADDR_WIDTH=10,C_DEPTH=1024,C_HAS_CLK=0,C_HAS_D=0,C_HAS_WE=0,C_MEM_INIT_FILE="sig_rom1.mif",C_MEM_TYPE=0,C_READ_MIF=1,C_SYNC_ENABLE=1,C_WIDTH=14) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256/QM_XC7A35TFTG256.sim/sim_1/behav/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=21.0,...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module xil_defaultlib.IQsin
+Compiling module dist_mem_gen_v8_0_11.dist_mem_gen_v8_0_11(C_FAMILY="a...
+Compiling module xil_defaultlib.sig_rom1
+Compiling module xil_defaultlib.TOP
+Compiling module xil_defaultlib.TOP_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot TOP_tb_behav
+
+****** Webtalk v2016.3 (64-bit)
+  **** SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+  **** IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256/QM_XC7A35TFTG256.sim/sim_1/behav/xsim.dir/TOP_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256/QM_XC7A35TFTG256.sim/sim_1/behav/xsim.dir/TOP_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Mon Jan 16 22:50:34 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/2016_3/Vivado/2016.3/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Mon Jan 16 22:50:34 2017...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 1082.891 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '9' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256/QM_XC7A35TFTG256.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TOP_tb_behav -key {Behavioral:sim_1:Functional:TOP_tb} -tclbatch {TOP_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.3
+Time resolution is 1 ps
+source TOP_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+Warning: [Unisim MMCME2_ADV-20] Input CLKIN1 period and attribute CLKIN1_PERIOD are not same. Instance TOP_tb.TOP_u1.clk_wiz_0_u1.inst.mmcm_adv_inst 
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TOP_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 1086.805 ; gain = 3.914
+run 100000 ns
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Mon Jan 16 22:52:21 2017] Launched impl_1...
+Run output will be captured here: C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256/QM_XC7A35TFTG256.runs/impl_1/runme.log
+delete_hw_cfgmem [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+create_hw_cfgmem -hw_device [lindex [get_hw_devices] 0] -mem_dev  [lindex [get_cfgmem_parts {n25q64-3.3v-spi-x1_x2_x4}] 0]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Common 17-48] File not found: C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256/QM_XC7A35TFTG256.runs/impl_1/debug_nets.ltx
+set_property PROGRAM.ADDRESS_RANGE  {use_file} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.FILES [list "C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256/QM_XC7A35TFTG256.runs/impl_1/TOP.bin" ] [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0]]
+set_property PROGRAM.UNUSED_PIN_TERMINATION {pull-none} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+startgroup 
+if {![string equal [get_property PROGRAM.HW_CFGMEM_TYPE  [lindex [get_hw_devices] 0]] [get_property MEM_TYPE [get_property CFGMEM_PART [get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]]]] }  { create_hw_bitstream -hw_device [lindex [get_hw_devices] 0] [get_property PROGRAM.HW_CFGMEM_BITFILE [ lindex [get_hw_devices] 0]]; program_hw_devices [lindex [get_hw_devices] 0]; }; 
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_cfgmem -hw_cfgmem [get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+Mfg ID : 20   Memory Type : ba   Memory Capacity : 17   Device ID 1 : 0   Device ID 2 : 0
+Performing Erase Operation...
+Erase Operation successful.
+Performing Program and Verify Operations...
+Program/Verify Operation successful.
+INFO: [Labtoolstcl 44-377] Flash programming completed successfully
+program_hw_cfgmem: Time (s): cpu = 00:00:02 ; elapsed = 00:01:54 . Memory (MB): peak = 1129.438 ; gain = 0.000
+endgroup
+close_hw
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Jan 16 23:01:54 2017...

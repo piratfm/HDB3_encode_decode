@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Sun Jan 15 23:53:13 2017
+# Process ID: 6392
+# Current directory: C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20076 C:\project\vivadoProject\EX_Prj\QM_XC7A35TFTG256\QM_XC7A35TFTG256.xpr
+# Log file: C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256/vivado.log
+# Journal file: C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256/QM_XC7A35TFTG256.xpr
+open_hw
+connect_hw_server

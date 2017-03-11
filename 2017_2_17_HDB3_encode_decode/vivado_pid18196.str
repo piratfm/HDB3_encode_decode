@@ -1,0 +1,95 @@
+/*
+
+Vivado v2016.3 (64-bit)
+SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+Process ID: 18196
+
+Current time: 	1/15/17 11:55:07 PM CST
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+Version: 10.0
+Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1366x768
+Screen resolution (DPI): 96
+Available screens: 2
+Default font: family=SimSun,name=ËÎÌו,style=plain,size=12
+
+Java version: 	1.8.0_66 64-bit
+Java home: 	C:/Xilinx/2016_3/Vivado/2016.3/tps/win64/jre
+
+User name: 	beibei
+User home directory: C:/Users/beibei
+User working directory: C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI base root directory: C:/Xilinx/2016_3/Vivado
+RDI data directory: C:/Xilinx/2016_3/Vivado/2016.3/data
+RDI bin directory: C:/Xilinx/2016_3/Vivado/2016.3/bin
+
+Vivado preferences path: C:/Users/beibei/AppData/Roaming/Xilinx/Vivado/2016.3/vivado.ini
+Vivado layouts directory: C:/Users/beibei/AppData/Roaming/Xilinx/Vivado/2016.3/layouts
+
+GUI allocated memory:	218 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 400 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bt:g (cd:JFrame):  Open Project : addNotify
+// Opening Vivado Project: C:\project\vivadoProject\EX_Prj\QM_XC7A35TFTG256\QM_XC7A35TFTG256.xpr. Version: Vivado v2016.3 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// [GUI Memory]: 35 MB (+34110kb) [00:00:09]
+// [Engine Memory]: 398 MB (+266037kb) [00:00:09]
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 38 MB (+1586kb) [00:00:12]
+// [Engine Memory]: 466 MB (+50212kb) [00:00:12]
+// [GUI Memory]: 60 MB (+20617kb) [00:00:13]
+// Tcl Message: open_project C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256/QM_XC7A35TFTG256.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/2016_3/Vivado/2016.3/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 487 MB. GUI used memory: 33 MB. Current time: 1/15/17 11:55:15 PM CST
+// Tcl Message: open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:10 . Memory (MB): peak = 758.859 ; gain = 104.734 
+// Project name: QM_XC7A35TFTG256; location: C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256; part: xc7a35tftg256-1
+// [Engine Memory]: 491 MB (+2244kb) [00:00:19]
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Open Project"); // bt:g (cd:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 26, true); // v:K (u:D, cd:JFrame) - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+// Elapsed time: 12 seconds
+selectButton(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Hardware_auto_connect_target"); // y:JideButton (g:CommandBar, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// bt:g (cd:JFrame):  Auto Connect : addNotify
+// [Engine Memory]: 521 MB (+4845kb) [00:01:15]
+// HMemoryUtils.trashcanNow. Engine heap size: 522 MB. GUI used memory: 36 MB. Current time: 1/15/17 11:56:14 PM CST
+// Elapsed time: 78 seconds
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, bt:g)
+selectButton("RDIResource.ProgressDialog_ARE_YOU_SURE_YOU_WANT_TO_CANCEL_Yes", "Yes"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, F:JDialog)
+// Tcl Message: INFO: [Common 17-41] Interrupt caught. Command should exit soon. 

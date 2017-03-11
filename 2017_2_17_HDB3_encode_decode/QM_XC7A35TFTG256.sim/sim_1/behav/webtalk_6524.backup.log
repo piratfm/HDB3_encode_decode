@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Webtalk v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Sat Feb 18 16:47:28 2017
+# Process ID: 6524
+# Current directory: C:/project/vivadoProject/2017_2_17_HDB3_encode/2017_2_17_HDB3_encode1/QM_XC7A35TFTG256.sim/sim_1/behav
+# Command line: wbtcv.exe -mode batch -source C:/project/vivadoProject/2017_2_17_HDB3_encode/2017_2_17_HDB3_encode1/QM_XC7A35TFTG256.sim/sim_1/behav/xsim.dir/TOP_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/project/vivadoProject/2017_2_17_HDB3_encode/2017_2_17_HDB3_encode1/QM_XC7A35TFTG256.sim/sim_1/behav/webtalk.log
+# Journal file: C:/project/vivadoProject/2017_2_17_HDB3_encode/2017_2_17_HDB3_encode1/QM_XC7A35TFTG256.sim/sim_1/behav\webtalk.jou
+#-----------------------------------------------------------
+source C:/project/vivadoProject/2017_2_17_HDB3_encode/2017_2_17_HDB3_encode1/QM_XC7A35TFTG256.sim/sim_1/behav/xsim.dir/TOP_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/project/vivadoProject/2017_2_17_HDB3_encode/2017_2_17_HDB3_encode1/QM_XC7A35TFTG256.sim/sim_1/behav/xsim.dir/TOP_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Sat Feb 18 16:47:32 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2016.4/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Sat Feb 18 16:47:32 2017...

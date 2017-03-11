@@ -1,0 +1,15 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  "../../../Code/source.v" --include "../../../IP/clk_wiz_0"
+verilog xil_defaultlib  "../../../Code/add_v.v" --include "../../../IP/clk_wiz_0"
+verilog xil_defaultlib  "../../../Code/add_b.v" --include "../../../IP/clk_wiz_0"
+verilog xil_defaultlib  "../../../Code/polar.v" --include "../../../IP/clk_wiz_0"
+verilog xil_defaultlib  "../../../Code/remove_bv.v" --include "../../../IP/clk_wiz_0"
+verilog xil_defaultlib  "../../../Code/remove_polar.v" --include "../../../IP/clk_wiz_0"
+verilog xil_defaultlib  "../../../Code/TOP.v" --include "../../../IP/clk_wiz_0"
+verilog xil_defaultlib  "../../../Testbench/TOP_tb.v" --include "../../../IP/clk_wiz_0"
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Thu Feb 16 13:20:51 2017
+# Process ID: 2588
+# Current directory: C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13160 C:\project\vivadoProject\EX_Prj\QM_XC7A35TFTG256\QM_XC7A35TFTG256.xpr
+# Log file: C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256/vivado.log
+# Journal file: C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256/QM_XC7A35TFTG256.xpr
+upgrade_ip -srcset clk_wiz_0 -vlnv xilinx.com:ip:clk_wiz:5.3 [get_ips  clk_wiz_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips clk_wiz_0] -no_script -sync -force -quiet
+generate_target all [get_files  C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256/IP/clk_wiz_0/clk_wiz_0.xci]
+catch { config_ip_cache -export [get_ips -all clk_wiz_0] }
+export_ip_user_files -of_objects [get_files C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256/IP/clk_wiz_0/clk_wiz_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256/IP/clk_wiz_0/clk_wiz_0.xci]
+launch_runs -jobs 2 clk_wiz_0_synth_1
+export_simulation -of_objects [get_files C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256/IP/clk_wiz_0/clk_wiz_0.xci] -directory C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256/QM_XC7A35TFTG256.ip_user_files/sim_scripts -ip_user_files_dir C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256/QM_XC7A35TFTG256.ip_user_files -ipstatic_source_dir C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256/QM_XC7A35TFTG256.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256/QM_XC7A35TFTG256.cache/compile_simlib/modelsim} {questa=C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256/QM_XC7A35TFTG256.cache/compile_simlib/questa} {riviera=C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256/QM_XC7A35TFTG256.cache/compile_simlib/riviera} {activehdl=C:/project/vivadoProject/EX_Prj/QM_XC7A35TFTG256/QM_XC7A35TFTG256.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1

@@ -1,0 +1,13 @@
+0.6
+2016.4
+Dec 14 2016
+22:58:16
+C:/project/vivadoProject/2017_2_17_HDB3_encode/2017_2_17_HDB3_encode1/Code/TOP.v,1487407735,verilog,,,,TOP,,,../../../IP/clk_wiz_0,,,,,
+C:/project/vivadoProject/2017_2_17_HDB3_encode/2017_2_17_HDB3_encode1/Code/add_b.v,1487404410,verilog,,,,add_b,,,../../../IP/clk_wiz_0,,,,,
+C:/project/vivadoProject/2017_2_17_HDB3_encode/2017_2_17_HDB3_encode1/Code/add_v.v,1487402796,verilog,,,,add_v,,,../../../IP/clk_wiz_0,,,,,
+C:/project/vivadoProject/2017_2_17_HDB3_encode/2017_2_17_HDB3_encode1/Code/polar.v,1487406389,verilog,,,,polar,,,../../../IP/clk_wiz_0,,,,,
+C:/project/vivadoProject/2017_2_17_HDB3_encode/2017_2_17_HDB3_encode1/Code/remove_bv.v,1487407292,verilog,,,,remove_bv,,,../../../IP/clk_wiz_0,,,,,
+C:/project/vivadoProject/2017_2_17_HDB3_encode/2017_2_17_HDB3_encode1/Code/remove_polar.v,1487407636,verilog,,,,remove_polar,,,../../../IP/clk_wiz_0,,,,,
+C:/project/vivadoProject/2017_2_17_HDB3_encode/2017_2_17_HDB3_encode1/Code/source.v,1487384378,verilog,,,,source,,,../../../IP/clk_wiz_0,,,,,
+C:/project/vivadoProject/2017_2_17_HDB3_encode/2017_2_17_HDB3_encode1/QM_XC7A35TFTG256.sim/sim_1/behav/glbl.v,1481753704,verilog,,,,glbl,,,,,,,,
+C:/project/vivadoProject/2017_2_17_HDB3_encode/2017_2_17_HDB3_encode1/Testbench/TOP_tb.v,1487339171,verilog,,,,TOP_tb,,,../../../IP/clk_wiz_0,,,,,
